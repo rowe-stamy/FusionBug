@@ -1,0 +1,18 @@
+﻿schema {
+  query: Query
+}
+
+type Bar {
+  commonField: String!
+  barField: String!
+}
+
+type Fizz {
+  commonField: String!
+  fizzField: String!
+}
+
+type Query {
+  barByCommonField(commonField: String!): Bar!
+  fizzByCommonField(commonField: String!): Fizz!
+}

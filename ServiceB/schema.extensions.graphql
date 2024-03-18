@@ -1,0 +1,4 @@
+extend type Foo {
+    barByCommonField(commonField: String! @require(field: "commonField")): Bar
+    fizzByCommonField(commonField: String! @require(field: "commonField")): Fizz
+}

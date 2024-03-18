@@ -1,0 +1,11 @@
+﻿schema {
+  query: Query
+}
+
+type Foo {
+  commonField: String!
+}
+
+type Query {
+  foos: [Foo!]!
+}
